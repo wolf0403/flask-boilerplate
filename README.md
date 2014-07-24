@@ -14,3 +14,4 @@ A boilerplate for Flask web apps.
 
 * test.py:
   Simple nosetest for quick smoking. Requires Requests library.
+

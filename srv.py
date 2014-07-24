@@ -1,8 +1,7 @@
 #/usr/bin/env python
 
 from flask import request, g, Flask, session
-
-from json import dumps
+from flask.json import dumps
 
 from common import FAKE_USER, SERVER_PORT,\
     jsonfunc, userfunc, debugfunc

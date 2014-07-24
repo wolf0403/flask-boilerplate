@@ -7,6 +7,15 @@ from json import dumps
 from flask import Response, session
 
 SERVER_PORT = 8888
+import os
+if 'PORT' in os.environ:
+    try:
+        envport = os.environ['PORT']
+        SERVER_PORT = int(envport)
+    except ValueError:
+        import warnings
+        warnings.warn("Invalid port ({}) specified in env PORT"\
+                      .format(envport))
 
 
 FAKE_USER = 'FAKE_USER'
